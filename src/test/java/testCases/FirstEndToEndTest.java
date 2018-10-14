@@ -2,33 +2,41 @@ package testCases;
 
 import java.io.IOException;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import testBase.TestBase;
+import uiActions.HomepageActions;
 
 public class FirstEndToEndTest extends TestBase {
-
+	
 	public FirstEndToEndTest() throws IOException {
 		super();
 	}
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setup() throws IOException
 	{
 		init();
+		log.info("Starts on the https://openweathermap.org/ ");
 	}
 	
 	@Test
-	public void firstTest()
+	public void firstTest() throws IOException
 	{
-		System.out.println("Here");
+			HomepageActions homepage = new HomepageActions(driver);
+			log.info("***************************First test cases Execution started***************************");
+			homepage.isWeatherLinkPresent();
+			homepage.ismapDropdownPresent();
+			homepage.isApiLinkPresent();
+			homepage.isSignInLinkDisplayed();
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void tearDown()
 	{
+		log.info("Closing the browser for first test case");
 		closeBrowser();
 	}
 

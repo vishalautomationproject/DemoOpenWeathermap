@@ -1,0 +1,42 @@
+===================================================================================================================
+Author :- Vishal Phadnis
+Date :- 14 Oct 2018
+Site :- https://openweathermap.org
+Framework :- based on Page object model design pattern
+Components :- maven , testNg , Log4j, properties file
+
+Note :- before execution , In TestBase class , on Line #46 & #52 , change the path of driver.exe to local machine path on which execution will be taken place
+
+To execute test suite :- src/resource :- right click on "testng.xml" & Run as - TestNg Suite
+===================================================================================================================
+
+Framework Details is as follows :-
+
+1)This is a maven project.In POM.xml all the dependencies are defined ; src/main/java is page layer in the framework
+
+2)Testbase :- This is the base class which consist of browser details , wait details
+
+3)uiAction  : In this package classes created based on the pages present on the website , so HomepageActions is page class for homepage
+
+This contains : object repository- having web elements with locators
+
+Also actions used on the page is also defined in the action methods
+
+4) src/test/java :- this is test layer in the framework.Contains all the test pages for 3 test cases based on the testNg framework
+
+5) src/resources :- In this folder , properties file is available which contains all the environment variable e.g url , browser etc
+
+6) testNg.xml :- with this , we can execute all the 3 test cases at one click on suite level
+
+7) log4j :- for  generating the logs during the execution & logfile.out file is getting generated with logs
+
+8) Reports :- testNg reporting can be seen in this framework in the folder : test-output>>index.html .By opening this fileion
+ in any web browser we can see the report on execution
+ 
+ 9) ****Bonus****
+ 
+ Apart from Default TestNg reporting , Advance Reporting ---> Extent Report have been implemented 
+ 
+ Details ;- After execution :- refresh the "test-output" folder & open the "Extent.html" file with web browser.
+ 
+ 

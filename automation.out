@@ -1,4 +1,0 @@
-2018-10-12 18:20:31 INFO  TestBase:55 - Open the browser : chrome
-2018-10-12 18:21:09 INFO  TestBase:22 - 1. Starts on the https://openweathermap.org/ 
-2018-10-12 18:21:09 INFO  HomepageActions:55 - 2. Enters an invalid city name
-2018-10-12 18:21:10 INFO  HomepageActions:58 - 3. Searches for the weather

@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44024" started-at="2018-10-12T12:50:28Z" finished-at="2018-10-12T12:51:12Z">
+  <suite name="Open Weather Map Application Test Automation Test Suite" duration-ms="65696" started-at="2018-10-14T04:20:47Z" finished-at="2018-10-14T04:21:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44024" started-at="2018-10-12T12:50:28Z" finished-at="2018-10-12T12:51:12Z">
+    <test name="OpenWeatherMap Test Cases" duration-ms="65696" started-at="2018-10-14T04:20:47Z" finished-at="2018-10-14T04:21:53Z">
       <class name="testCases.ThirdEndToEndTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.ThirdEndToEndTest@59ec2012]" name="setup" is-config="true" duration-ms="41597" started-at="2018-10-12T12:50:28Z" finished-at="2018-10-12T12:51:09Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.ThirdEndToEndTest@166e5bd]" name="setup" is-config="true" duration-ms="13764" started-at="2018-10-14T04:21:33Z" finished-at="2018-10-14T04:21:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="thirdTest()[pri:0, instance:testCases.ThirdEndToEndTest@59ec2012]" name="thirdTest" duration-ms="1604" started-at="2018-10-12T12:51:09Z" finished-at="2018-10-12T12:51:11Z">
+        <test-method status="PASS" signature="thirdTest()[pri:0, instance:testCases.ThirdEndToEndTest@166e5bd]" name="thirdTest" duration-ms="3814" started-at="2018-10-14T04:21:47Z" finished-at="2018-10-14T04:21:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- thirdTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.ThirdEndToEndTest@59ec2012]" name="tearDown" is-config="true" duration-ms="817" started-at="2018-10-12T12:51:11Z" finished-at="2018-10-12T12:51:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.ThirdEndToEndTest@166e5bd]" name="tearDown" is-config="true" duration-ms="2086" started-at="2018-10-14T04:21:51Z" finished-at="2018-10-14T04:21:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.ThirdEndToEndTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testCases.FirstEndToEndTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.FirstEndToEndTest@1805618]" name="setup" is-config="true" duration-ms="18283" started-at="2018-10-14T04:20:47Z" finished-at="2018-10-14T04:21:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:testCases.FirstEndToEndTest@1805618]" name="firstTest" duration-ms="371" started-at="2018-10-14T04:21:05Z" finished-at="2018-10-14T04:21:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.FirstEndToEndTest@1805618]" name="tearDown" is-config="true" duration-ms="2327" started-at="2018-10-14T04:21:06Z" finished-at="2018-10-14T04:21:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.FirstEndToEndTest -->
+      <class name="testCases.SecondEndToEndTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.SecondEndToEndTest@ef9176]" name="setup" is-config="true" duration-ms="17580" started-at="2018-10-14T04:21:08Z" finished-at="2018-10-14T04:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="secondTest()[pri:0, instance:testCases.SecondEndToEndTest@ef9176]" name="secondTest" duration-ms="5073" started-at="2018-10-14T04:21:26Z" finished-at="2018-10-14T04:21:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.SecondEndToEndTest@ef9176]" name="tearDown" is-config="true" duration-ms="2312" started-at="2018-10-14T04:21:31Z" finished-at="2018-10-14T04:21:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.SecondEndToEndTest -->
+    </test> <!-- OpenWeatherMap Test Cases -->
+  </suite> <!-- Open Weather Map Application Test Automation Test Suite -->
 </testng-results>

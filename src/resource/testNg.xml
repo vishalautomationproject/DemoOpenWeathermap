@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Open Weather Map Application Test Automation Test Suite">
+	
+	<listeners>
+		<listener class-name="extentReport.ExtentReporterNG" />
+	</listeners>
+	
+	
+	
+	<test name="OpenWeatherMap Test Cases">
+		<classes>
+			<class name="testCases.FirstEndToEndTest"></class>
+			<class name="testCases.SecondEndToEndTest"></class>
+			<class name="testCases.ThirdEndToEndTest"></class>
+
+		</classes>
+	</test>
+</suite>

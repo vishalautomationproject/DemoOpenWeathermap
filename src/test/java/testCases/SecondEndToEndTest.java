@@ -2,8 +2,8 @@ package testCases;
 
 import java.io.IOException;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import testBase.TestBase;
@@ -15,29 +15,26 @@ public class SecondEndToEndTest extends TestBase {
 		super();
 	}
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setup() throws IOException
 	{
 		init();
-		log.info("1. Starts on the https://openweathermap.org/ ");
+		log.info("Starts on the https://openweathermap.org/ ");
 	}
 	
 	@Test
 	public void secondTest() throws IOException
 	{
-		try {
 			HomepageActions homepage = new HomepageActions(driver);
+			log.info("***************************Second test cases Execution started***************************");
 			homepage.invalidCityName();
-			getScreenShot("TC01_Success");
-		} catch (Exception e) {
-			e.printStackTrace();
-			getScreenShot("TC01_Success");
-		}
+			
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void tearDown()
 	{
+		log.info("Closing the browser for second test case");
 		closeBrowser();
 	}
 

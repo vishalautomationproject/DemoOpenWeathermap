@@ -2,10 +2,9 @@ package testCases;
 
 import java.io.IOException;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import testBase.TestBase;
 import uiActions.HomepageActions;
 
@@ -15,29 +14,26 @@ public class ThirdEndToEndTest extends TestBase {
 		super();
 	}
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setup() throws IOException
 	{
 		init();
-		log.info("1. Starts on the https://openweathermap.org/ ");
+		log.info("Starts on the https://openweathermap.org/ ");
 	}
 	
 	@Test
-	public void thirdTest()
+	public void thirdTest() throws IOException
 	{
-		try {
-			HomepageActions homepage = new HomepageActions(driver);
+	    	HomepageActions homepage = new HomepageActions(driver);
+	    	log.info("***************************Third test cases Execution started***************************");
 			homepage.validCityName();
-			//getScreenShot("TC01_Success");
-		} catch (Exception e) {
-			e.printStackTrace();
-			//getScreenShot("TC01_Success");
-		}
+		
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void tearDown()
 	{
+		log.info("Closing the browser for third test case");
 		closeBrowser();
 	}
 
